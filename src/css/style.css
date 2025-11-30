@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Navigation styles */
+a{
+text-decoration: none;
+color: #0e0e0e;
+}
+nav{
+    grid-area: nav;
+}
+li{
+    list-style-type: none;
+}
+ nav a{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight:500;
+}
+nav ul{
+        display: flex;
+        justify-content: space-around;
+        padding: 1em 0;
+        margin: 0;
+    }
+.main-title a{
+    grid-area: main;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+.main-logo{
+    height: 2rem;
+    width: 2rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+.header{
+    display: grid;
+    grid-template-columns: 2fr 0.25fr 2fr;
+    grid-template-areas:
+        "main . nav";
+    align-items: center;
+    padding: 0.75em 1em;
+}
+/* End of Navigation styles */
+
+/* Main Title styles */
+article{
+    width: 80%;
+    margin: 2.5em 2.5em;
+}
+.hero-section{
+    position: relative;
+    color: #FFFFFF;
+}
+.hero-image{
+    width: 100%;
+    /* height: auto; */
+    position: relative;
+}
+.hero-article{
+    position: absolute;
+    top: 20%;
+}
+.hero-date{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+.hero-article-title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+.hero-article-desc{
+    font-size: 1.125rem;
+}
+.post-image{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 5px;
+}
+.post-article-desc{
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #505050;
+}
+.post-date{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 100;
+    margin-top: 1em;
+}
+.post-article-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+.view-more{
+    /* display: block; */
+    text-align: center;
+    margin: 2em 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #0e0e0e;
+    text-decoration: underline;
+}
+/* End of Main Title styles */
+/* Footer styles */
+footer{
+    background-color: #0e0e0e;
+    color: #ECECEC;
+    text-align: center;
+    padding: 1.5em 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+footer p{
+    margin: 0;
+    padding: 0.2em;
+}
+.copy-right{
+    color: #d7d7d7;
+    font-weight: 100;
+}
