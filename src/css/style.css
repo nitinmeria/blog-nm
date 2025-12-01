@@ -63,31 +63,42 @@ article{
 .hero-section{
     position: relative;
     color: #FFFFFF;
-    
+    height: 21em;
+    background-image: url(../images/hero-post-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.hero-image{
+/* .hero-image{
     width: 100%;
     ;
     position: relative;
-}
+} */
 .hero-article{
     position: absolute;
-    top: 0.5%;
+    text-align: center;
+    top: 3em;
+    /* bottom: 1em; */
+    right: 5em;
+    left: 2em;
 }
 .hero-date{
     text-transform: uppercase;
     font-size: 0.75rem;
     font-weight: 100;
+    text-align: left;
 }
 .hero-article-title{
     font-size: 1.75rem;
     font-weight: bold;
     margin: 0.25em 0 0.25em 0;
+    text-align: left;
 }
 .hero-article-desc{
     font-size: 1rem;
     margin: 0;
     padding-bottom: 0.5em;
+    text-align: left;
 }
 .post-image{
     width: 100%;
