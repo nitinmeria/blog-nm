@@ -7,6 +7,8 @@ body {
     padding: 0;
     background-color: #FFFFFF;
     font-family: "Source Sans Pro", sans-serif;
+    max-width: 70vw;
+    margin: auto;
 }
 h2{
     font-size: 1rem;
@@ -162,4 +164,52 @@ footer p{
 }
 .profile-title{
     font-size: 2.125rem;
+}
+.hidden{
+    display: none;
+}
+
+@media(min-width: 1024px){
+    body{
+    margin: auto;
+    max-width: 50vw;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    }
+    .post-section{
+        display: inline;
+    }
+    .blog-posts{
+        display: grid;
+        grid-gap: .5em;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .hero-article{
+        top: 10em;
+    
+        right: 5em;
+        left: 2em;
+}
+.post-details-header{
+   max-width: 40vw;
+   margin: auto;
+   height: auto;
+}
+.post-details-image{
+    margin: 2em auto;
+    display: block;
+    }
+}
+@media(min-width:768px) and (max-width:1023px){
+    .blog-posts{
+        display: grid;
+        grid-gap: .5em;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .post-details-header{
+   max-width: 60vw;
+   margin: auto;
+   height: auto;
+}
 }
